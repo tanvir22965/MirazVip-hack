@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>🔥 𝗢𝗪𝗡𝗘𝗥 𝗠𝗜𝗥𝗔𝗝 🔥</title>
+
+<style>
+  :root {
+    --deep-p: #7b00ff;
+    --neon-p: #bc66ff;
+    --glow: 0 0 10px #7b00ff, 0 0 20px #bc66ff;
+  }
+
+  html, body { 
+    margin: 0; padding: 0; 
+    height: 100%; width: 100%; 
+    overflow: hidden; 
+    background: #000; 
+    font-family: Arial, sans-serif;
+  }
+
+  /* Game Background */
+  .bg-wrapper {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 1; display: flex; justify-content: center;
+  }
+  iframe { width: 100%; max-width: 450px; height: 100%; border: none; }
+
+  /* --- MINI TOOL BOX --- */
+  .tool-wrap {
+    position: fixed; top: 110px; left: 15px; 
+    width: 170px; z-index: 9999; touch-action: none;
+    border-radius: 12px; padding: 1.5px;
+    background: linear-gradient(145deg, var(--deep-p), #000, var(--deep-p));
+    box-shadow: 0 0 20px rgba(123, 0, 255, 0.8);
+    overflow: hidden;
+  }
+
+  /* Deep Purple Snook - Inside Box */
+  .snook-dot {
+    position: absolute; width: 3px; height: 3px;
+    background: var(--neon-p); border-radius: 50%;
+    pointer-events: none; z-index: 2;
+    box-shadow: 0 0 6px var(--neon-p);
+    animation: fall linear infinite;
+  }
+  @keyframes fall {
+    to { transform: translateY(260px); opacity: 0; }
+  }
+
+  .inner-content {
+    background: rgba(3, 0, 8, 0.98); border-radius: 11px; 
+    color: #fff; padding: 12px 6px; text-align: center; 
+    position: relative; z-index: 10;
+  }
+
+  .title-txt { 
+    font-size: 10px; font-weight: bold; color: #fff; 
+    text-shadow: var(--glow); margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  input {
+    width: 88%; padding: 8px; background: #000; 
+    border: 1px solid var(--deep-p); border-radius: 5px; 
+    color: #fff; margin-bottom: 8px; font-size: 11px;
+    text-align: center; outline: none; box-shadow: inset 0 0 5px var(--deep-p);
+  }
+
+  .btn-act {
+    width: 96%; padding: 10px 0; border-radius: 6px; border: none;
+    font-size: 11px; font-weight: bold; cursor: pointer; 
+    background: var(--deep-p); color: #fff;
+    box-shadow: var(--glow); margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .btn-tg {
+    display: flex; align-items: center; justify-content: center; gap: 5px;
+    width: 96%; padding: 8px 0; border-radius: 6px;
+    background: #28a8e9; color: #fff; font-weight: bold;
+    text-decoration: none; font-size: 10px; margin: 0 auto 8px;
+  }
+  .btn-tg img { width: 12px; height: 12px; }
+
+  .msg-info {
+    font-size: 8.5px; color: #ff00ff; margin-bottom: 10px;
+    font-weight: 900; text-shadow: 0 0 5px #ff00ff;
+  }
+
+  /* Result View */
+  #view-result { display: none; margin-top: 5px; }
+  .sig-box {
+    padding: 12px 4px; border: 1px solid var(--deep-p);
+    border-radius: 8px; background: rgba(123, 0, 255, 0.1);
+  }
+  .sig-val { font-size: 18px; font-weight: 900; color: #fff; text-shadow: var(--glow); }
+  .timer { font-size: 10px; color: var(--neon-p); margin-top: 5px; font-weight: bold; }
+
+  /* Controls */
+  .ctrl-btns { display: flex; gap: 4px; margin-top: 10px; }
+  .btn-c { flex: 1; padding: 7px; font-size: 9px; border-radius: 4px; border: none; color: #fff; cursor: pointer; font-weight: bold; }
+  .hide-b { background: #222; }
+  .exit-b { background: #500; }
+
+  #toggle-nb {
+    position: fixed; bottom: 80px; right: 20px; width: 45px; height: 45px;
+    background: var(--deep-p); border-radius: 50%; z-index: 10000;
+    display: none; align-items: center; justify-content: center;
+    box-shadow: var(--glow); color: #fff; font-weight: 900; cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-wrapper">
+    <iframe src="https://bdwin24.biz?inviteCode=PRFGFMN&from=web"></iframe>
+</div>
+
+<!-- Main Tool Container -->
+<div class="tool-wrap" id="nbMain">
+  <div class="inner-content">
+    <div class="title-txt">🔥 𝗢𝗪𝗡𝗘𝗥 𝗠𝗜𝗥𝗔𝗝 🔥</div>
+    
+    <!-- Login Interface -->
+    <div id="view-login">
+      <input type="password" id="pInput" placeholder="ENTER PASSWORD">
+      <button class="btn-act" id="doAct">ACTIVATE</button>
+
+      <a href="https://t.me/miraj_269432" target="_blank" class="btn-tg">
+        <img src="https://i.ibb.co.com/G4D2Rbyt/IMG-20260413-123238-401.jpg" alt="TG">
+        INBOX
+      </a>
+      
+      <div class="msg-info">PLEASE DEPOSIT 300 TAKA</div>
+      
+      <a href="https://t.me/httpsBOSS_" target="_blank" style="color:var(--neon-p); font-size:7px; text-decoration:none; display:block; margin-bottom:5px;">
+        COMMUNITY GROUP
+      </a>
+    </div>
+
+    <!-- Signal Result Interface -->
+    <div id="view-result">
+      <div id="clockDisplay" style="font-size:8px; color:#444; margin-bottom:3px;">00:00:00</div>
+      <div class="sig-box">
+        <div id="resTxt" class="sig-val">FETCHING</div>
+        <div class="timer">NEXT: <span id="timerVal">30</span>s</div>
+      </div>
+    </div>
+
+    <div class="ctrl-btns">
+      <button class="btn-c hide-b" id="doHide">HIDE</button>
+      <button class="btn-c exit-b" id="doExit">EXIT</button>
+    </div>
+    <div style="font-size:7px; color:#222; margin-top:8px;" id="idTag">NB-ID: ...</div>
+  </div>
+</div>
+
+<div id="toggle-nb">NB</div>
+
+<script>
+  // Device ID Management
+  const currentID = localStorage.getItem("nb_final_v1") || "NB-" + Math.floor(1000 + Math.random() * 8999);
+  localStorage.setItem("nb_final_v1", currentID);
+  document.getElementById("idTag").innerText = "ID: " + currentID;
+
+  // Snook Snook Effect (Internal Only)
+  function createSnook() {
+    const box = document.getElementById('nbMain');
+    if(box.style.display === 'none') return;
+    const s = document.createElement('div');
+    s.className = 'snook-dot';
+    s.style.left = Math.random() * 160 + 'px';
+    s.style.top = '-5px';
+    s.style.animationDuration = (Math.random() * 1.2 + 1.5) + 's';
+    box.appendChild(s);
+    setTimeout(() => s.remove(), 2500);
+  }
+  setInterval(createSnook, 350);
+
+  // Dragging System
+  function applyDrag(el, isF = false) {
+    let px=0, py=0, cx=0, cy=0, moved=false;
+    const start = (e) => {
+      if(e.target.tagName === 'INPUT' || e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+      moved = false;
+      let ev = e.type.includes('touch') ? e.touches[0] : e;
+      cx = ev.clientX; cy = ev.clientY;
+      document.onmousemove = move; document.ontouchmove = move;
+      document.onmouseup = stop; document.ontouchend = stop;
+    };
+    const move = (e) => {
+      moved = true;
+      let ev = e.type.includes('touch') ? e.touches[0] : e;
+      px = cx - ev.clientX; py = cy - ev.clientY;
+      cx = ev.clientX; cy = ev.clientY;
+      el.style.top = (el.offsetTop - py) + "px";
+      el.style.left = (el.offsetLeft - px) + "px";
+    };
+    const stop = () => {
+      document.onmousemove = null; document.ontouchmove = null;
+      if(isF && !moved) {
+        document.getElementById("nbMain").style.display = "block";
+        document.getElementById("toggle-nb").style.display = "none";
+      }
+    };
+    el.onmousedown = start; el.ontouchstart = start;
+  }
+  applyDrag(document.getElementById("nbMain"));
+  applyDrag(document.getElementById("toggle-nb"), true);
+
+  // --- ACTIVATE BUTTON LOGIC (FIXED) ---
+  const validKey = "m1miraj";
+  document.getElementById("doAct").onclick = function() {
+    const userInput = document.getElementById("pInput").value;
+    if(userInput.trim() === validKey) {
+      // Hide login, show signal
+      document.getElementById("view-login").style.display = "none";
+      document.getElementById("view-result").style.display = "block";
+      startEngine();
+    } else {
+      alert("WRONG PASSWORD! CONTACT @MIRAJ_TRADER_15");
+    }
+  };
+
+  // Visibility Controls
+  document.getElementById("doHide").onclick = () => {
+    document.getElementById("nbMain").style.display = "none";
+    document.getElementById("toggle-nb").style.display = "flex";
+  };
+  document.getElementById("doExit").onclick = () => { if(confirm("EXIT TOOL?")) window.location.reload(); };
+
+  // Prediction Engine
+  function startEngine() {
+    let lastRef = -1;
+    setInterval(() => {
+      const now = new Date();
+      const ms = now.getTime();
+      const slot = Math.floor(ms / 30000);
+      
+      if(slot !== lastRef) {
+        lastRef = slot;
+        const list = ["BIG [7,9]", "SMALL [0,2]", "SMALL [1,3]", "BIG [6,8]", "BIG [5]", "SMALL [4]"];
+        const res = list[Math.floor(Math.random() * list.length)];
+        const el = document.getElementById("resTxt");
+        el.innerText = res;
+        el.style.color = res.includes("BIG") ? "#00ff00" : "#00ffff";
+        el.style.textShadow = res.includes("BIG") ? "0 0 15px #00ff00" : "0 0 15px #00ffff";
+      }
+      document.getElementById("timerVal").innerText = 30 - (Math.floor(ms / 1000) % 30);
+      document.getElementById("clockDisplay").innerText = now.toLocaleTimeString();
+    }, 1000);
+  }
+</script>
+</body>
+</html>
